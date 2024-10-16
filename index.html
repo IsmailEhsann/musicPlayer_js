@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musicPlayer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4a634d76ad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Should create a page where it displays all my songs in a column and then I can choose which song to play after clicking and it changes page to the player -->
+
+    <div class="container">
+        <div class="background-text">
+            <h1>My</h1>
+            <h1>Soundtrack</h1>
+            <h1>Study</h1>
+            <h1>Playlist</h1>
+        </div>
+
+        <div class="horizontal">
+            <div class="player">
+                <!-- <h1>Album Name</h1> -->
+                <h1 id="music-title">Microfilament</h1>
+                <p id="music-artist">Boogiepop and Others</p>
+                <audio id='audio'>
+                    <source src="music/Boogiepop - Microfilament.mp3">
+                </audio>
+                <div class="progress-container">
+                    <input type="range" value="0" id="progress">
+                </div>
+
+                <div class="controls">
+                    <button id="backward"><i class="fa-solid fa-backward"></i></button>
+                    <button id="play-music"><i class="fa-solid fa-play" id="ctrlIcon"></i></button>
+                    <button id="forward"><i class="fa-solid fa-forward"></i></button>
+                </div>
+            </div>
+    
+            <div class="display">
+                <div class="display-border">
+                    <img id='display-img' src="music/images/Boogiepop.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="main.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>
